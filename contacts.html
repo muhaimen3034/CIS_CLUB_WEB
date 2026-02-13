@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIS Club Contact</title>
+
+<style>
+/* ---------------------- BASIC ------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background: #e9eef3;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ---------------------- NAVBAR ------------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: white;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.enroll-btn {
+    padding: 7px 16px;
+    background: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Navbar responsive */
+@media (max-width: 750px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .navbar nav {
+        justify-content: center;
+    }
+}
+
+/* ---------------------- PAGE LAYOUT ------------------------- */
+.contact-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* left + right box responsive */
+@media (max-width: 900px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .info-box,
+    .form-box {
+        width: 100% !important;
+    }
+}
+
+/* ---------------------- LEFT INFO BOX ------------------------- */
+.info-box {
+    width: 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info-box h2 {
+    text-align: center;
+    background: #0a2c59;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+/* mobile grid fix */
+@media (max-width: 600px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-item {
+    text-align: center;
+    background: #f7f8fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* ---------------------- RIGHT FORM BOX ------------------------- */
+.form-box {
+    width: 55%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-box h2 {
+    text-align: center;
+    background: #0a2c59;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* responsive fix */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b8b8b8;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 120px;
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 20px;
+    display: block;
+}
+
+.captcha-box {
+    margin-top: 10px;
+    background: #f0f3f7;
+    width: max-content;
+    padding: 10px 20px;
+    font-size: 22px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #0a2c59;
+    color: white;
+    padding: 14px;
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #0d3872;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="club_logo.jpg" alt="CIS Club Logo">
+        <span>CIS Club</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="event.html">Events</a>
+        <a href="resource.html">E-Resource</a>
+        <a href="committee.html">Committee</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <div class="nav-right">
+        <a class="lang" href="#">EN</a>
+        <a href="enroll.html"><button class="enroll-btn">Enroll Now</button></a>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<div class="contact-wrapper">
+
+    <!-- LEFT INFO BOX -->
+    <div class="info-box">
+        <h2>Get In Touch With Us Now!</h2>
+
+        <div class="info-grid">
+
+            <div class="info-item">
+                <div class="icon">📞</div>
+                <h3>Phone Number</h3>
+                <p>01639507665</p>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">✉️</div>
+                <h3>Email</h3>
+                <p>cisclub@diu.edu.bd<br>dsaoffice3@daffodilvarsity.edu.bd<br>dsaoffice7@daffodilvarsity.edu.bd</p>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">📍</div>
+                <h3>Location</h3>
+                <a href="#">
+                    Knowledge Tower, 7th Floor, DIU Smart City, Birulia, Savar
+                </a>
+            </div>
+
+            <div class="info-item">
+                <div class="icon">🕒</div>
+                <h3>Working Hours</h3>
+                <p>Saturday to Thursday<br>09:00 AM – 04:00 PM</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="form-box">
+
+        <h2>Contact Us</h2>
+
+        <form id="contactForm">
+
+            <div class="row">
+                <input type="text" id="firstName" placeholder="First Name *">
+                <input type="text" id="lastName" placeholder="Last Name">
+            </div>
+
+            <div class="row">
+                <input type="text" id="mobile" placeholder="Mobile No *">
+                <input type="email" id="email" placeholder="Email ID *">
+            </div>
+
+            <textarea id="message" placeholder="Message"></textarea>
+
+            <label>Please type the characters *</label>
+            <input type="text" id="captchaInput" placeholder="Enter Captcha">
+
+            <div class="captcha-box" id="captchaDisplay"></div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script>
+function generateCaptcha() {
+    let chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+    let captcha = "";
+
+    for (let i = 0; i < 5; i++) {
+        captcha += chars.charAt(Math.floor(Math.random() * chars.length)) + " ";
+    }
+
+    document.getElementById("captchaDisplay").innerText = captcha.trim();
+}
+
+generateCaptcha();
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let firstName = document.getElementById("firstName").value.trim();
+    let mobile = document.getElementById("mobile").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let captchaInput = document.getElementById("captchaInput").value.trim();
+    let captchaDisplay = document.getElementById("captchaDisplay").innerText.replace(/ /g, "");
+
+    if (firstName === "") {
+        alert("First Name is required!");
+        return;
+    }
+
+    if (!/^\d{11}$/.test(mobile)) {
+        alert("Enter a valid 11-digit mobile number!");
+        return;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+        alert("Enter a valid email address!");
+        return;
+    }
+
+    if (captchaInput.replace(/ /g, "") !== captchaDisplay) {
+        alert("Captcha does not match!");
+        generateCaptcha();
+        return;
+    }
+
+    alert("Form successfully submitted!");
+    this.reset();
+    generateCaptcha();
+});
+</script>
+</body>
+</html>

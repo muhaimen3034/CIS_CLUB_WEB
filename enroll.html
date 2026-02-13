@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="enroll.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>CIS Club Enrollment Form</h2>
+    
+        <form id="enrollForm">
+          <div class="error" id="errorMsg">Please fill all required fields correctly!</div>
+    
+          <label>Full Name</label>
+          <input type="text" id="fullname" required />
+    
+          <label>Email</label>
+          <input type="email" id="email" required />
+    
+          <label>Phone Number</label>
+          <input type="text" id="phone" required />
+    
+          <label>Department</label>
+          <select id="dept" required>
+            <option value="">Select Department</option>
+            <option value="CIS">CIS</option>
+            <option value="CSE">CSE</option>
+            <option value="SWE">SWE</option>
+            <option value="Other">Other</option>
+          </select>
+    
+          <label>Batch Initial</label>
+          <input type="text" id="batch" required />
+    
+          <label>Hometown</label>
+          <input type="text" id="hometown" required />
+    
+          <label>WhatsApp Number</label>
+          <input type="text" id="wp" required />
+    
+          <label>Facebook Profile Link</label>
+          <input type="url" id="fb" required />
+    
+          <label>Why do you want to join CIS Club?</label>
+          <textarea id="comment" required></textarea>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    
+</body>
+</html>
